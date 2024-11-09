@@ -1,0 +1,195 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(120deg, #f6d365, #fda085); /* Gradient background */
+            color: #2d3436; /* Dark gray for main text */
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: #ffffff;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+        }
+        .resume-title {
+            text-align: center;
+            color: #ffffff;
+            background-color: #ff6b6b; /* Coral red for title */
+            padding: 25px;
+            font-size: 42px;
+            font-weight: bold;
+            border-radius: 12px;
+            margin-bottom: 35px;
+        }
+        .contact-info {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .contact-info p {
+            margin: 5px;
+            font-size: 18px;
+            color: #495867;
+        }
+        .profile-links {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .profile-links a {
+            color: #ff6b6b;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 0 15px;
+            padding: 8px 20px;
+            border-radius: 5px;
+            border: 1px solid #ff6b6b;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .profile-links a:hover {
+            background-color: #ff6b6b;
+            color: #ffffff;
+        }
+        .section {
+            margin-bottom: 45px;
+        }
+        .section h2 {
+            font-size: 30px;
+            color: #ff6b6b;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+        .section p, .section ul {
+            font-size: 17px;
+            line-height: 1.6;
+            color: #2d3436;
+        }
+        .section ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        .section ul li {
+            margin-bottom: 10px;
+        }
+        .section ul li a {
+            color: #ff6b6b;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .section ul li a:hover {
+            text-decoration: underline;
+        }
+        .profile {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .profile h3 {
+            font-size: 26px;
+            font-weight: 500;
+            color: #2d3436;
+        }
+        .profile p {
+            font-size: 19px;
+            color: #495867;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Resume Title -->
+        <h1 class="resume-title">Resume</h1>
+        
+        <!-- Profile Section (without Image) -->
+        <div class="profile">
+            <h3>Little About Me</h3>
+            <p>As a second-year BTech student, I am enthusiastic about technology, programming, and expanding my expertise in data science and artificial intelligence. I am driven to make impactful contributions to the tech industry by engaging in innovative projects and tackling complex challenges.</p>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="contact-info">
+            <p class="email">Email: <a href="mailto:umabhavishareddypatlolla@gmail.com">umabhavishareddypatlolla@gmail.com</a></p>
+            <p class="phone">Phone: (+91) 9110314751</p>
+            <p>Location: Vikarabad</p>
+        </div>
+
+        <!-- Profile Links -->
+        <div class="profile-links">
+            <a href="https://www.codechef.com/users/bhavisha_15" target="_blank">Codechef</a> |
+            <a href="https://github.com/Umabhavisha22/Umabhavisha.git" target="_blank">GitHub</a>
+        </div>
+
+        <!-- Profile Section -->
+        <div class="section">
+            <h2>Profile</h2>
+            <ul>
+                <li><strong>Hi! I'm Umabhavisha </strong> - second-year BTech student with a deep passion for technology and innovation.</li>
+                <li>Dedicated to enhancing my skills in data science, AI, and software development to establish a solid technical foundation.</li>
+                <li>Motivated to apply my knowledge through hands-on projects, always eager to gain practical experience and industry insights.</li>
+                <li>Inquisitive, hardworking, and committed to continuous growth, with a vision to make meaningful contributions in the tech industry.</li>
+                <li>Building my career step-by-step, driven by a passion for learning and making a significant impact in my field.</li>
+            </ul>
+        </div>
+
+        <!-- Skills Section -->
+        <div class="section">
+            <h2>Skills</h2>
+            <ul>
+                <li>Programming: Python, C, Java, Django</li>
+                <li>Web development: HTML, CSS, JavaScript</li>
+                <li>Data Science, AI, Problem-solving</li>
+                <li>Critical-thinking, Communication, Teamwork</li>
+            </ul>
+        </div>
+
+        <!-- Education Section -->
+        <div class="section">
+            <h2>Education</h2>
+            <p><strong>BTech</strong> - Koneru Lakshmaiah University (2023-2027)</p>
+            <p><strong>Intermediate</strong> - Sri Chaitanya Jr College (2021-2023)</p>
+            <p><strong>10th Class</strong> - Revathi High School (2021)</p>
+        </div>
+
+        <!-- Certifications Section -->
+        <div class="section">
+            <h2>Certifications</h2>
+            <p><strong>Dance</strong></p> - participated in events.
+            <p><strong>Eduskills Alteryx Data Analytics Process Automation Virtual Internship</strong> - Completed Alteryx Data Analytics Process Automation Virtual Internship certification.</p>
+            <p><strong>AWS Cloud Foundations</strong> - Successfully completed the AWS Cloud Foundations course, building a solid understanding of cloud infrastructure, deployment, etc.</p>
+        </div>
+
+        <!-- Languages Section -->
+        <div class="section">
+            <h2>Languages Known</h2>
+            <ul>
+                <li>English</li>
+                <li>Telugu</li>
+                <li>Hindi</li>
+                <li>Tamil</li>
+                <li>Malayalam</li>
+            </ul>
+        </div>
+
+        <!-- Hobbies Section -->
+        <div class="section">
+            <h2>Hobbies</h2>
+            <ul>
+                <li>Travelling</li>
+                <li>Fitness and Sports</li>
+                <li>Listening to music</li>
+                <li>Dance</li>
+                <li>Writing stories</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
